@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Regular';
+  src: local('SF-Pro-Display-Regular'),
+    url('./assets/fonts/SF-Pro-Display-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Medium';
+  src: local('SF-Pro-Display-Medium'),
+    url('./assets/fonts/SF-Pro-Display-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Semibold';
+  src: local('SF-Pro-Display-Semibold'),
+    url('./assets/fonts/SF-Pro-Display-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Light';
+  src: local('SF-Pro-Display-Light'),
+    url('./assets/fonts/SF-Pro-Display-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MontRegular';
+  src: local('Montserrat-Regular'),
+    url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
