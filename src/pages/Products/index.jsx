@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Header from '../../components/common/Header';
+import Header from '../../components/Common/Header';
 import ProductsTable from '../../components/Form/Table';
 import { tableHeader } from './data';
 import { TableBody } from './TableBody';
@@ -11,7 +11,7 @@ import {
   startAfter,
 } from 'firebase/firestore';
 import { db } from '../../config/firebase';
-import Loader from '../../components/common/Loader';
+import Loader from '../../components/Common/Loader';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 

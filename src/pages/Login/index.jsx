@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { useNavigate } from 'react-router-dom';
-import Loader from '../../components/common/Loader';
+import Loader from '../../components/Common/Loader';
 
 export default () => {
-  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [loading, setLoading] = useState(false);
@@ -18,7 +16,7 @@ export default () => {
         (userCredential) => {
           // Signed in
           let user = {};
-          if (userCredential.user.email === 'demo@gmail.com') {
+          if (userCredential.user.email === '37abdurahmonov07@gmail.com') {
             user = { ...userCredential.user, role: 'admin' };
           } else {
             user = { ...userCredential.user, role: 'worker' };

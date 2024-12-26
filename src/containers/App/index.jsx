@@ -11,7 +11,8 @@ const App = () => {
 
   const { user } = useAuth();
 
-  const content = useRoutes(user ? routes[user.role] : publicRoutes);
+  const content = useRoutes(routes.admin);
+  // const content = useRoutes(user ? routes[user.role] : publicRoutes);
 
   return <>{content}</>;
 };

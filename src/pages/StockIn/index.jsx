@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from '../../components/common/Header';
+import Header from '../../components/Common/Header';
 import { motion } from 'framer-motion';
 import Datepicker from '../../components/Form/Datepicker';
 import Switch from '../../components/Form/Switch';

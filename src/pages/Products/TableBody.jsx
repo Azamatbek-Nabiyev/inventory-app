@@ -1,12 +1,12 @@
 import { Edit, Trash2 } from 'lucide-react';
 import { useState } from 'react';
-import Modal from '../../components/common/Modal';
+import Modal from '../../components/Common/Modal';
 import DeleteModal from './DeleteModal';
 import UpdateModal from './UpdateModal';
 import { doc, deleteDoc, collection, addDoc, setDoc } from 'firebase/firestore';
 import { db } from '../../config/firebase';
 import { toast } from 'react-toastify';
-import ImageModal from '../../components/common/ImageModal';
+import ImageModal from '../../components/Common/ImageModal';
 
 export const TableBody = ({ product, fetchData }) => {
   const [deleteModal, setDeleteModal] = useState(false);

@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import Header from '../../components/common/Header';
+import Header from '../../components/Common/Header';
 import { motion } from 'framer-motion';
 import Textarea from '../../components/Form/Textarea';
 import LoadingButton from '../../components/Form/LoadingButton';
 import Filter from './Filter';
-import ImageModal from '../../components/common/ImageModal';
-import Modal from '../../components/common/Modal';
+import ImageModal from '../../components/Common/ImageModal';
+import Modal from '../../components/Common/Modal';
 import ProductList from './ProductList';
-import Loader from '../../components/common/Loader';
+import Loader from '../../components/Common/Loader';
 import { collection, getDocs, addDoc, setDoc, doc } from 'firebase/firestore';
 import { db } from '../../config/firebase';
 import { Link, useNavigate } from 'react-router-dom';

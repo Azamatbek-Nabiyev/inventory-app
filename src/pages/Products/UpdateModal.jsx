@@ -13,8 +13,6 @@ export default function UpdateModal({
   loading,
   handleImageModal,
 }) {
-  // let newDate = new Date(date.seconds * 1000);
-
   return (
     <form className='p-10' onSubmit={handleSubmit}>
       <h3 className='mb-5 text-2xl font-semibold text-white text-center'>

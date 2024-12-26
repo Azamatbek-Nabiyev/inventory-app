@@ -34,7 +34,7 @@ export default () => {
         </motion.button>
 
         <nav className='mt-8 flex-grow'>
-          {routes[user.role].map((item, idx) => {
+          {routes.admin.map((item, idx) => {
             return (
               <Link key={idx + 1} to={item?.href}>
                 <motion.div

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Modal from '../../components/common/Modal';
+import Modal from '../../components/Common/Modal';
 import ModalView from './ModalView';
 import { Eye } from 'lucide-react';
 import {
@@ -7,7 +7,7 @@ import {
   productStatus,
   productStatusColor,
 } from '../../constants/statuses';
-import ImageModal from '../../components/common/ImageModal';
+import ImageModal from '../../components/Common/ImageModal';
 
 export const TableBody = ({ product }) => {
   const [isOpen, setIsOpen] = useState(false);
