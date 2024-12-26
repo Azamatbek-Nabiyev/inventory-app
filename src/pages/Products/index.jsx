@@ -18,10 +18,10 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 export default () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [lastDocs, setLastDocs] = useState([]); // Track lastDocs for pagination
-  const [page, setPage] = useState(1); // Current page number
-  const [hasMore, setHasMore] = useState(true); // Track if more data is available
-  const pageSize = 5; // Number of items per page
+  const [lastDocs, setLastDocs] = useState([]);
+  const [page, setPage] = useState(1);
+  const [hasMore, setHasMore] = useState(true);
+  const pageSize = 5;
 
   const fetchData = async (pageNumber = 1) => {
     setLoading(true);
@@ -44,14 +44,12 @@ export default () => {
 
       setData(newData);
 
-      // Check if we have more data to fetch
       if (querySnapshot.docs.length < pageSize) {
         setHasMore(false);
       } else {
         setHasMore(true);
       }
 
-      // Store lastDoc if moving forward in pages
       if (pageNumber > lastDocs.length) {
         setLastDocs((prevDocs) => [
           ...prevDocs,
